@@ -1,4 +1,4 @@
-# Thought Lab 🧠✍️
+# DeltaSync 🧠✍️
 **AI-Powered Real-Time Collaborative Document Editor**
 
 Thought Lab is a highly performant, real-time collaborative document editor that seamlessly merges multi-user editing with generative AI. Built with React, Yjs, Tiptap, and WebSockets, it provides a Notion-style editing experience where AI is a native part of the writing process, not just a disconnected chatbot.
