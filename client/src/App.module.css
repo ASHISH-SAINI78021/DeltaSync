@@ -1,0 +1,46 @@
+.appContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-page);
+}
+
+.header {
+    height: 60px;
+    padding: 0 2rem;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logoTitle {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.docTag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--bg-panel);
+    color: var(--text-muted);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+}
+
+.mainContent {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}

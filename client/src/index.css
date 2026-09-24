@@ -1,0 +1,41 @@
+/* Design System CSS Custom Properties */
+:root {
+  /* Page & Layout Backgrounds */
+  --bg-page: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --bg-panel: #F3F2EF;
+
+  /* Typography Colors */
+  --text-primary: #1A1A18;
+  --text-muted: #6B6862;
+  --border-color: #E5E3DD;
+
+  /* Accent Colors */
+  --color-accent: #4F46E5;
+  --color-accent-hover: #4338CA;
+
+  /* Semantic Feedback Colors */
+  --color-success: #2E7D5B;
+  --color-warning: #B7791F;
+  --color-danger: #C0362C;
+  --bg-ai-tint: #EEEBFB;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-mono: 'JetBrains Mono', Menlo, monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
