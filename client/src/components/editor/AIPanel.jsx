@@ -24,7 +24,7 @@ export function AIPanel({ editor }) {
         try {
             const documentText = editor.getText();
             const token = localStorage.getItem('token');
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001/api'}/ai/ask`, {
+            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001/api' || 'https://deltasync.onrender.com/api'}/ai/ask`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ export function AIPanel({ editor }) {
         try {
             const documentText = editor.getText();
             const token = localStorage.getItem('token');
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001/api'}/ai/stream`, {
+            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001/api' || 'https://deltasync.onrender.com/api'}/ai/stream`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
