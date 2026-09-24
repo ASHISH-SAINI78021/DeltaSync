@@ -1,0 +1,18 @@
+# Netlify Configuration File
+# Place this file in your site's publish directory or project root
+
+[build]
+  base = "client"
+  publish = "dist"
+  command = "npm run build"
+
+# Redirect rules for Single Page Applications (SPA)
+# Ensures react-router client-side routes (e.g. /document/123) direct to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional environment settings
+[build.environment]
+  NODE_VERSION = "18"
